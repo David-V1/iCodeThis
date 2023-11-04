@@ -13,33 +13,34 @@
 <!-- Change code below this line -->
 <body class="bg-[#292929] flex justify-center items-center min-h-screen">
 
-    <section class="grid-cols-3">
+    <section class="p-5 sm:grid sm:grid-cols-3 sm:gap-5 gap-6 flex flex-col">
         <!-- card -->
-        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-[#242424]">
+        <div class="relative max-w-sm rounded overflow-hidden shadow-lg bg-[#242424] hover:scale-105 transition-all duration-500 ease-in-out hover:border hover:border-blue-500 hover:border-opacity-100">
           <!-- Top Portion -->
-          <div class="flex flex-col space-x-4 p-5 bg-[#313131]">
+          <div class="flex flex-col space-x-4 p-4 bg-[#313131] ">
             <div class="my-5 pl-2">
-              <i class="bi bi-flower3 text-5xl text-yellow-500"></i>
+              <i class="bi bi-grid text-5xl text-yellow-500"></i>
             </div>
             <div>
               <h2 class="text-lg font-medium text-yellow-500">STARTING UP</h2>
-              <p class="text-base text-gray-500 pr-10">Kickstart your journey with our Starter Package, offering essential tools tailored for budding entrepreneurs at
+              <p class="text-gray-500 pr-6 text-sm">Kickstart your journey with our Starter Package, offering essential tools tailored for budding entrepreneurs at
               competitive prices.</p>
             </div>
           </div>
           
-          <!-- Bottom Portion -->
+          <div class="card-banner1"></div>
+
           <div class="features py-4 p-5">
             <ul class="list-disc space-y-2 pl-5">
               
               <i class="bi bi-check mr-2 text-yellow-500 text-4xl"></i>
-              <li class="text-white inline">1 Domain</i>
+              <li class="text-white inline text-xs">1 Domain</i>
               <br>
               <i class="bi bi-check mr-2 text-yellow-500 text-4xl"></i>
-              <li class="text-white inline">Email Support</li>
+              <li class="text-white inline text-xs">Email Support</li>
               <br>
               <i class="bi bi-check mr-2 text-yellow-500 text-4xl"></i>
-              <li class="text-white inline">200GB Cloud Storage</li>
+              <li class="text-white inline text-xs">200GB Cloud Space</li>
             </ul>
           </div>
           <div class="btn-wrapper p-5">
@@ -48,7 +49,81 @@
                       </button>
           </div>
         </div>
+
+        <!-- ********** Card 2 **********-->
+
+        <div class="relative max-w-sm rounded overflow-hidden shadow-lg bg-[#242424] hover:scale-105 transition-all duration-500 ease-in-out hover:border hover:border-purple-500 hover:border-opacity-100">
+          <!-- Top Portion -->
+          <div class="flex flex-col space-x-4 p-4 bg-[#313131] ">
+            <div class="my-5 pl-2">
+              <i class="bi bi-grid-3x2-gap text-5xl text-yellow-500"></i>
+            </div>
+            <div>
+              <h2 class="text-lg font-medium text-yellow-500">GROWING BUSINESS</h2>
+              <p class="text-sm text-gray-500 pr-6">Elevate your operations with our Growing Business tier, featuring advanced analytics and marketing tools for expanding
+              companies.</p>
+            </div>
+          </div>
+
+          <div class="card-banner2"></div>
+      
+          <div class="features py-4 p-5">
+            <ul class="list-disc space-y-2 pl-5">
         
+              <i class="bi bi-check mr-2 text-yellow-500 text-4xl"></i>
+              <li class="text-white inline text-xs">10 Domain</i>
+                <br>
+                <i class="bi bi-check mr-2 text-yellow-500 text-4xl"></i>
+              <li class="text-white inline text-xs">Email and Phone support</li>
+              <br>
+              <i class="bi bi-check mr-2 text-yellow-500 text-4xl"></i>
+              <li class="text-white inline text-xs">500GB Cloud S
+              Space</li>
+            </ul>
+          </div>
+          <div class="btn-wrapper p-5">
+            <button class="mt-4 w-full bg-[#1D1D1D] text-yellow-500 py-2 px-4 rounded hover:bg-purple-700 focus:outline-none focus:bg-blue-700">
+                                Select
+                              </button>
+          </div>
+        </div>
+
+        <!-- ********** Card 3 **********-->
+        <div class="relative max-w-sm rounded overflow-hidden shadow-lg bg-[#242424] hover:scale-105 transition-all duration-500 ease-in-out hover:border hover:border-red-500 hover:border-opacity-100">
+          <!-- Top Portion -->
+          <div class="flex flex-col space-x-4 p-4 bg-[#313131] ">
+            <div class="my-5 pl-2">
+              <i class="bi bi-grid-3x3-gap text-5xl text-yellow-500"></i>
+            </div>
+            <div>
+              <h2 class="text-lg font-medium text-yellow-500">ENTERPRISE</h2>
+              <p class="text-sm text-gray-500 pr-6">Our Enterprise level tier delivers a comprehensive suite of solutions for large-scale businesses seeking robust,
+              scalable performance.</p>
+            </div>
+          </div>
+        
+          <div class="card-banner3"></div>
+         
+          <div class="features py-4 p-2">
+            <ul class="p-1">
+        
+              <i class="bi bi-check mr-1 text-yellow-500 text-3xl"></i>
+              <li class="text-white inline text-xs">100 Domain</i>
+                <br>
+                <i class="bi bi-check mr-1 text-yellow-500 text-3xl"></i>
+              <li class="text-white inline text-xs">24/7 Email and Phone support</li>
+              <br>
+              <i class="bi bi-check mr-1 text-yellow-500 text-3xl"></i>
+              <li class="text-white inline text-xs">Unlimited Cloud Space</li>
+            </ul>
+          </div>
+          <div class="btn-wrapper p-5">
+            <button class="mt-4 w-full bg-[#1D1D1D] text-yellow-500 py-2 px-4 rounded hover:bg-red-700 focus:outline-none focus:bg-blue-700">
+                                        Select
+                                      </button>
+          </div>
+        </div>
+
     </section>
    
 </body>
