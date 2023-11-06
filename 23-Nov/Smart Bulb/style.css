@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  height: auto;
+}
+
+.login-wrapper {
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.input-box:focus {
+  border-color: #009688;
+  outline: none;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(0,150,136,0.6);
+}
+
+.form-label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #009688;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  background-color: #00796b;
+}
+
+.ctrl-wrapper {
+  position: absolute;
+  bottom: 40px;
+  left: 30%;
+  z-index: 100;
+}
+
+#logout {
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  height: 50px;
+  width: 50px;
+}
+#logout:hover {
+  cursor: pointer;
+}
+
+#slider {
+  position: absolute;
+  bottom: 80px;
+  right: 10%;
+}
+#slider:hover {
+  cursor: pointer;
+}
+
+#bulb-on,
+#bulb-off {
+  transform: rotate(180deg);
+}
+
+#bulb-on {
+  position: absolute;
+  bottom: 35px;
+  right: 7%;
+}
+#bulb-off {
+  position: absolute;
+  bottom: 35px;
+  left: 8%;
+}
+
+#slider .rs-handle {
+  background: #2e4170;
+  background: radial-gradient(ellipse at bottom, #374d86 0%,#283862 100%);
+}

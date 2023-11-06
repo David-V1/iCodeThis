@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ************************************************************************ -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ************************************************************************ -->
+
+    <!-- Remove the line below if you don't want to use TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/round-slider@1/dist/roundslider.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <!-- Change code below this line -->
+  <body class="bg-[#D7D8E2] flex justify-center items-center min-h-screen">
+    <div class="container max-w-sm rounded shadow-lg bg-white">
+      <div class="login-wrapper">
+        <div class="img flex justify-center">
+          <img
+            class="w-6/12"
+            src="https://us.123rf.com/450wm/qklatan/qklatan2111/qklatan211100154/177456376-a-black-vector-outline-illustration-of-a-burning-metallic-lamp-isolated-on-a-white-background.jpg?ver=6"
+            alt="pendant lamp"
+          />
+        </div>
+
+        <div class="login text-slate-950">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="username"
+          >
+            <h1 class="text-2xl font-bold">Login</h1>
+          </label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter Username"
+            class="input-box"
+          />
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="password"
+          >
+            <h1 class="text-2xl font-bold">Password</h1>
+          </label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter Password"
+            class="input-box"
+          />
+          <div class="btn">
+            <button
+              class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+      <i id="logout" class="bi bi-box-arrow-left text-3xl text-yellow-500"></i>
+      <div class="ctrl-wrapper">
+        <div class="ctrl-btn">
+          <div
+            class="w-36 h-36 bg-[#1E2B57] rounded-full flex items-center justify-center"
+            style="border: 8px solid #2e4170"
+          >
+            <span class="text-white text-lg font-semibold" id="btn-txt"
+              >OFF</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="slider-wrapper">
+        <div id="slider"></div>
+      </div>
+
+      <i
+        id="bulb-on"
+        class="bi bi-lightbulb-fill text-3xl text-yellow-500 bulb"
+      ></i>
+      <i id="bulb-off" class="bi bi-lightbulb text-3xl text-[#c3c5c8] bulb"></i>
+      <!-- On -->
+    </div>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include the Round Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/round-slider@1/dist/roundslider.min.js"></script>
+
+    <!-- ************************************************************************ -->
+    <script src="./app.js"></script>
+    <!-- ************************************************************************ -->
+  </body>
+  <!-- Change code above this line -->
+</html>
