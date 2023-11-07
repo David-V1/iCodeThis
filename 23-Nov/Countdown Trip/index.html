@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+		/>
+
+		<!-- Remove the line below if you don't want to use TailwindCSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+
+	<!-- Change code below this line -->
+	<body class="bg-[#181028] flex justify-center items-center min-h-screen">
+		<div class="overlay"></div>
+		<div class="container flex flex-col justify-center">
+			<div class="wrapper">
+				<div class="title py-12">
+					<h1>Trip to Alaska</h1>
+					<h3 class="inline">Sunday, 31 December 2023</h3>
+					<i
+						id="edit-icon"
+						class="bi bi-pencil-square text-2xl pl-3"
+					></i>
+					<br />
+					<input
+						class="text-lime-800 bg-gray-50 border border-gray-300 rounded-md py-2 px-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 hidden"
+						type="date"
+						id="start"
+						name="trip-start"
+						value="2018-07-22"
+						min="2023-11-06"
+						max="2025-12-31"
+					/>
+				</div>
+
+				<div class="countdown flex justify-center gap-x-5 items-center">
+					<div class="glass-wrapper">
+						<div class="days glass-effect g-left">
+							<span id="day">21</span>
+						</div>
+						<p align="center">Days</p>
+					</div>
+					<!--  -->
+					<div class="glass-wrapper">
+						<div class="hours glass-effect">
+							<span id="hour">05</span>
+						</div>
+						<p align="center">Hours</p>
+					</div>
+					<!--  -->
+					<div class="glass-wrapper">
+						<div class="minutes glass-effect">
+							<span id="minute">50</span>
+						</div>
+						<p align="center">Minutes</p>
+					</div>
+					<!--  -->
+					<div class="glass-wrapper">
+						<div class="seconds glass-effect g-right">
+							<span id="second">28</span>
+						</div>
+						<p align="center">Seconds</p>
+					</div>
+				</div>
+				<div class="description py-12">
+					<p>
+						Duis aute irure dolor in reprehenderit in voluptate
+						velit esse cillum dolore eu fugiat nulla pariatur.
+						Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>
