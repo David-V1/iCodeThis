@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- ******************************** -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- ******************************** -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+		/>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+
+	<!-- Change code below this line -->
+	<body class="bg-[#081F3B] flex justify-center items-center min-h-screen">
+		<div class="bubble-container"></div>
+		
+		<!--  -->
+		<div class="rate-wrapper text-white grid-container">
+			<div class="step-indicator">
+				<div class="icons-wrapper rate-box bg-[#F9745B] flex justify-around text-5xl">
+					<div class="icon done">
+						<i class="bi bi-check-circle-fill"></i>
+						<p class="text-sm my-3 ml-2">Audio</p>
+					</div>
+					<div class="progress-line"></div>
+					<div class="icon active">
+						<i class="bi bi-record-circle-fill"></i>
+						<p class="text-sm my-3 ml-2">Video</p>
+					</div>
+					<div class="progress-line"></div>
+					<div class="icon fade">
+						<i id="inactive-icon" class="bi bi-record-fill"></i>
+						<p class="text-sm my-3 ml-0">Performance</p>
+					</div>
+				</div>
+
+			</div>
+			<!--  -->
+			<div class="rate-box r__experience bg-[#8d3080]">
+				<span>Rate your experience</span>
+				<div
+					class="r__experience-rating flex m-5 gap-x-5 cursor-pointer"
+				>
+					<span>1</span>
+					<span>2</span>
+					<span>3</span>
+					<span>4</span>
+					<span>5</span>
+				</div>
+			</div>
+			<div
+				class="r__service rate-box bg-[#DB627D] flex flex-col justify-between min-h-[200px]"
+			>
+				<span>How do you rate our service</span>
+				<div class="star-rating flex justify-between text-3xl">
+					<i class="bi bi-star"></i>
+					<i class="bi bi-star"></i>
+					<i class="bi bi-star"></i>
+					<i class="bi bi-star"></i>
+					<i class="bi bi-star"></i>
+				</div>
+				<div class="footer-rating flex justify-between">
+					<span>Bad</span>
+					<span class="mr-[-20px]">Very good</span>
+				</div>
+			</div>
+
+			<div class="rate-box r__worked bg-[#8343d3]">
+				<label for="option1" class="container">
+					Video was blurry
+					<input
+						type="checkbox"
+						id="option1"
+						class="custom-checkbox"
+						name="option1"
+						value="Video Blurry"
+					/>
+					<span class="checkmark"></span>
+				</label>
+				<!--  -->
+				<label for="option2" class="container">
+					Sound wasn't working
+					<input
+						type="checkbox"
+						id="option2"
+						class="custom-checkbox"
+						name="option2"
+						value="No audio"
+					/>
+					<span class="checkmark"></span>
+				</label>
+				<!--  -->
+				<label for="option3" class="container">
+					App was crashing
+					<input
+						type="checkbox"
+						id="option3"
+						class="custom-checkbox"
+						name="option3"
+						value="App Crash"
+					/>
+					<span class="checkmark"></span> </label
+					>
+					<!--  -->
+					<label for="option4" class="container"> Else
+						<input
+						type="checkbox"
+						id="option4"
+						name="option4"
+						value="Else"
+						/>
+						<span class="checkmark"></span> </label
+					</label><br />
+			</div>
+		</div>
+
+		<!-- ******************************** -->
+		<script src="./app.js"></script>
+		<!-- ******************************** -->
+	</body>
+</html>
