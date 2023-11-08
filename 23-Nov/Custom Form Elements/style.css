@@ -158,7 +158,6 @@ body {
 }
 
 @media screen and (max-width: 769px) {
-	/* small screens */
 	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
@@ -166,7 +165,7 @@ body {
 		grid-gap: 1rem;
 	}
 	.step-indicator {
-		grid-column: 2/6;
+		grid-column: 2/12;
 		grid-row: 1/2;
 	}
 	.r__service {
