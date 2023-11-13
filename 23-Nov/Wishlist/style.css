@@ -1,0 +1,121 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(75deg, #1689bf 0%, #d113e231 25%,#3A51A7 75%, #607ad7 100%);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+  
+}
+.wishlist-container {
+  margin: 3rem;
+  max-width: 1000px;  
+}
+
+/* header */
+.header {
+  background-color: red;
+  background: linear-gradient(45deg, #bdd9d6d4 0%, #a3dfd9f5 35%, #a0e0daf5 70%, #b7e8e3fa 100%);
+}
+.header__info h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.header button {
+  font-size: 0.975rem;
+  font-weight: 400;
+  color: #518CD2;
+  background-color: #fff;
+  padding: 0 1.15rem;
+}
+.header button:hover {
+  color: #fff;
+  background-color: #518CD2;
+}
+
+/* card */
+
+.card__content {
+  max-width: 90%;
+}
+.card__content h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #2E86D2;
+}
+.card__content p {
+  font-size: 0.975rem;
+  margin-bottom: 0.5rem;
+  color: #7c7c7c;
+}
+.cart-btn {
+  background: linear-gradient(45deg, #4bd2c4 0%, #5ad9cd 35%, #3bd6c7 70%, #49d8ca 100%);
+  padding: 0.5rem 1rem;
+  border-radius: 1.8rem;
+  width: 100%;
+}
+.cart-btn:hover {
+  background: linear-gradient(45deg, #228faa 0%, #2baccd 50%, #1bb2d0 70%, #1dcae0 100%);
+}
+
+.card__price {
+    width: 100%;
+    max-width: 10rem;
+    color: #fff;
+    text-align: right;
+}
+.card__price p {
+  font-size: 1.350rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.dollar-icon {
+  color: #333;
+  font-size: 4.5rem;
+  position: relative;
+  top: 0.25rem;
+
+}
+.cart-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  position: relative;
+  top: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.share-icon {
+  font-size: 1.5rem;
+  position: relative;
+  top: 0.25rem;
+  margin-right: 0.25rem;
+
+}
+
+.card__img {
+  min-width: max-content;
+}
+@media screen and (max-width: 768px) {
+  .card__flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 1rem;
+  }
+
+  .card__price {
+    text-align: center;
+  }
+}
