@@ -1,0 +1,47 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kanit', sans-serif;
+    font-weight: 800;
+}
+p {
+  font-family: 'Kanit', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333333;
+}
+
+.products-container img {
+  cursor: pointer;
+}
+
+.scale-up {
+  transform: scale(1.125);
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*  */
+.star {
+  color: #FECA6B;
+  font-size: 20px;
+}
+
+.half-star::after {
+  content: '☆';
+  color: gray;
+  position: absolute;
+  left: 0;
+}
