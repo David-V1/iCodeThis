@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Remove the line below if you don't want to use TailwindCSS -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	</head>
+
+	<body class="bg-[#181028] flex justify-center items-center min-h-screen">
+		<goals-chart data="[3183, 3846, 1058, 174]" labels='["Direct", "Organic", "Social", "Referral"]'></goals-chart>
+		<recycle-chart data="[35, 30, 20, 10, 8]" labels='["Text", "Images", "Docs", "Videos","other"]'></recycle-chart>
+
+		<script src="recycle-chart.js"></script>
+		<script src="goals-chart.js"></script>
+	</body>
+</html>
