@@ -29,9 +29,9 @@ class RadarChart extends HTMLElement {
 	render() {
 		this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-      <div class="bg-white rounded-lg shadow p-4 w-full">
-        <h2 class="text-2xl font-semibold mb-4">Health Assessment</h2>
-        <div class="chart-container w-full">
+      <div class="bg-white rounded-lg shadow p-4 w-full h-full">
+        <h2 class="text-lg font-semibold">Health Assessment</h2>
+        <div class="chart-container w-full h-full">
           <canvas id="radarChart" class="w-auto h-auto"></canvas>
         </div>
       </div>

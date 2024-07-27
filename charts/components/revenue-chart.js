@@ -20,8 +20,8 @@ class RevenueChart extends HTMLElement {
           height: 400px; /* Set a fixed height for the chart */
         }
       </style>
-      <div class="bg-white rounded-lg shadow p-4 w-full max-w-4xl">
-        <h2 class="text-2xl font-semibold mb-4">Revenue </h2>
+      <div class="bg-white rounded-lg shadow p-4 w-full h-full max-w-4xl">
+        <h2 class="text-lg font-semibold">Revenue </h2>
         <div class="chart-container">
           <canvas id="verticalBarChart"></canvas>
         </div>
