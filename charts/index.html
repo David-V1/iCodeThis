@@ -1,27 +1,58 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
 			rel="stylesheet"
 		/>
+
+		<!-- Load Tailwind CSS -->
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+		<!-- Tailwind CSS Configuration -->
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						fontFamily: {
+							sans: ["Nunito", "sans-serif"]
+						},
+						colors: {
+							primary: "#1a73e8",
+							secondary: "#155ab6",
+							neutral: "#f8f8f8",
+							textPrimary: "#333",
+							textSecondary: "#444"
+						},
+						fontSize: {
+							h1: ["2.5em", { lineHeight: "1.2", fontWeight: "800" }],
+							h2: ["2em", { lineHeight: "1.2", fontWeight: "700" }],
+							h3: ["1.75em", { lineHeight: "1.2", fontWeight: "600" }],
+							h4: ["1.5em", { lineHeight: "1.2", fontWeight: "600" }],
+							h5: ["1.25em", { lineHeight: "1.2", fontWeight: "500" }],
+							h6: ["1em", { lineHeight: "1.2", fontWeight: "500" }],
+							body: ["1rem", { lineHeight: "1.6", fontWeight: "400" }]
+						}
+					}
+				}
+			};
+		</script>
 	</head>
-		<recycle-chart data="[35, 30, 20, 10, 8]" labels='["Text", "Images", "Docs", "Videos","other"]'></recycle-chart>
-		<revenue-chart
-			data="[100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]"
-			labels='["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"]'
-		></revenue-chart>
-		<radar-chart
-			data="[65, 59, 70, 20, 56, 55, 40, 10]"
-			datasetLabel="Performance Metrics"
-			labels='["Revenue", "Net Income", "Operating Margin", "EPS", "ROE", "Debt to Equity", "Current Ratio", "Asset Turnover"]'
-		></radar-chart>
+	<body class="font-sans text-textPrimary bg-neutral">
+		<h1 class="text-h1">Good Morning, David</h1>
+		<p class="text-body">
+			<span class="dash-date">Friday, July 26th, 2024</span> | <span class="dash-location">Chicago, IL.</span>
+		</p>
+		<div class="chart-container">
+			<h2 class="text-h2">Chart Insights</h2>
+		</div>
 
 		<script src="./components/recycle-chart.js"></script>
 		<script src="./components/goals-chart.js"></script>
