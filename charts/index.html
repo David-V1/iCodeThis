@@ -11,8 +11,19 @@
 	<body class="bg-[#181028] flex justify-center items-center min-h-screen">
 		<goals-chart data="[3183, 3846, 1058, 174]" labels='["Direct", "Organic", "Social", "Referral"]'></goals-chart>
 		<recycle-chart data="[35, 30, 20, 10, 8]" labels='["Text", "Images", "Docs", "Videos","other"]'></recycle-chart>
+		<revenue-chart
+			data="[100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]"
+			labels='["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"]'
+		></revenue-chart>
+		<radar-chart
+			data="[65, 59, 70, 20, 56, 55, 40, 10]"
+			datasetLabel="Performance Metrics"
+			labels='["Revenue", "Net Income", "Operating Margin", "EPS", "ROE", "Debt to Equity", "Current Ratio", "Asset Turnover"]'
+		></radar-chart>
 
 		<script src="recycle-chart.js"></script>
 		<script src="goals-chart.js"></script>
+		<script src="revenue-chart.js"></script>
+		<script src="radar-chart.js"></script>
 	</body>
 </html>
