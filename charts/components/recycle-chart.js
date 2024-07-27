@@ -41,7 +41,7 @@ class RecycleChart extends HTMLElement {
 
 		this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-      <div class="bg-white rounded-lg shadow p-4 w-80">
+      <div class="bg-white rounded-lg shadow p-4 w-full">
         <div class="flex items-center justify-between mb-4">
           <h2 class="text-lg font-semibold">Recycled</h2>
           <button class="text-gray-500 hover:text-gray-700">
