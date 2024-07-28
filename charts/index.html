@@ -16,47 +16,59 @@
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	</head>
 	<body class="font-sans text-gray-900 bg-white">
-		<div class="container mx-auto p-2">
-			<div class="flex items-center space-x-4 mb-4 p-2 border-b-2 w-full">
-				<div class="bg-[#0D9488] w-20 h-20 rounded-full flex justify-center items-center">
-					<img src="./assets/memoji-chart-app.png" alt="user-pic" class="w-16 h-16 rounded-full object-cover" />
-				</div>
-				<div class="container">
-					<h1 class="text-2xl font-bold">Good Morning, David</h1>
-					<p class="text-sm mb-4 text-gray-400">
-						<span id="dash-date">2024</span> | <span id="dash-location">Chicago, IL.</span>
-					</p>
-				</div>
+		<!-- side nav -->
+		<div class="flex">
+			<div class="max-w-full bg-gray-300 text-white h-auto flex flex-col items-center py-4 space-y-6">
+				<img
+					src="./assets/charts-app-logo.svg"
+					alt="Charts App Logo"
+					class="mx-6 w-14 h-auto border-b-2 py-4 space-y-6"
+				/>
 			</div>
 
-			<!-- Chart Container -->
-			<div class="bg-gray-100 p-4 rounded shadow-md">
-				<h3 class="text-xl font-semibold mb-4">Chart Insights</h3>
-				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
-					<div class="">
-						<revenue-chart
-							data="[100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]"
-							labels='["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"]'
-						></revenue-chart>
+			<!-- user info and chart container -->
+			<div class="container mx-auto p-2">
+				<div class="flex items-center space-x-4 mb-4 p-2 border-b-2 w-full">
+					<div class="bg-[#0D9488] w-20 h-20 rounded-full flex justify-center items-center">
+						<img src="./assets/memoji-chart-app.png" alt="user-pic" class="w-16 h-16 rounded-full object-cover" />
 					</div>
-					<div class="">
-						<radar-chart
-							data="[65, 59, 70, 20, 56, 55, 40, 10]"
-							datasetLabel="Performance Metrics"
-							labels='["Revenue", "Net Income", "Operating Margin", "EPS", "ROE", "Debt to Equity", "Current Ratio", "Asset Turnover"]'
-						></radar-chart>
+					<div class="container">
+						<h1 class="text-2xl font-bold">Good Morning, David</h1>
+						<p class="text-sm mb-4 text-gray-400">
+							<span id="dash-date">2024</span> | <span id="dash-location">Chicago, IL.</span>
+						</p>
 					</div>
-					<div class="">
-						<goals-chart
-							data="[3183, 3846, 1058, 174]"
-							labels='["Direct", "Organic", "Social", "Referral"]'
-						></goals-chart>
-					</div>
-					<div class="">
-						<recycle-chart
-							data="[35, 30, 20, 10, 8]"
-							labels='["Text", "Images", "Docs", "Videos","other"]'
-						></recycle-chart>
+				</div>
+
+				<!-- Chart Container -->
+				<div class="bg-gray-100 p-4 rounded shadow-md">
+					<h3 class="text-xl font-semibold mb-4">Chart Insights</h3>
+					<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6">
+						<div class="">
+							<revenue-chart
+								data="[100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]"
+								labels='["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"]'
+							></revenue-chart>
+						</div>
+						<div class="">
+							<radar-chart
+								data="[65, 59, 70, 20, 56, 55, 40, 10]"
+								datasetLabel="Performance Metrics"
+								labels='["Revenue", "Net Income", "Operating Margin", "EPS", "ROE", "Debt to Equity", "Current Ratio", "Asset Turnover"]'
+							></radar-chart>
+						</div>
+						<div class="">
+							<goals-chart
+								data="[3183, 3846, 1058, 174]"
+								labels='["Direct", "Organic", "Social", "Referral"]'
+							></goals-chart>
+						</div>
+						<div class="">
+							<recycle-chart
+								data="[35, 30, 20, 10, 8]"
+								labels='["Text", "Images", "Docs", "Videos","other"]'
+							></recycle-chart>
+						</div>
 					</div>
 				</div>
 			</div>
