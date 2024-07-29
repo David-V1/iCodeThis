@@ -16,9 +16,9 @@
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	</head>
 	<body class="font-sans text-gray-900 bg-white">
-		<!-- side nav -->
-		<div class="flex">
-			<div class="max-w-full bg-gray-300 text-white h-auto flex flex-col items-center py-4 space-y-6">
+		<div class="flex max-[600px]:flex-col h-full sm:h-screen">
+			<!-- side nav -->
+			<div class="max-w-full bg-gray-300 text-white h-auto sm:flex flex-col items-center py-4 space-y-6 hidden">
 				<img
 					src="./assets/SVG/v2-logo-square.svg"
 					alt="Charts App Logo"
@@ -60,6 +60,18 @@
 						</li>
 					</ul>
 				</nav>
+			</div>
+
+			<div class="sm:hidden w-full bg-gray-300 text-white flex items-center justify-between p-4">
+				<!-- Left Icon -->
+				<img src="./assets/SVG/v2-logo-square.svg" alt="Charts App Logo" class="w-10 h-auto" />
+
+				<!-- Hamburger Button -->
+				<button id="sidebarToggle" class="text-gray-800 focus:outline-none">
+					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+					</svg>
+				</button>
 			</div>
 
 			<!-- user info and chart container -->
