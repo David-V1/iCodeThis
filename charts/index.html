@@ -16,7 +16,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	</head>
 	<body class="font-sans text-gray-900 bg-white">
-		<div class="flex max-[600px]:flex-col h-full sm:h-screen">
+		<div class="flex max-[600px]:flex-col h-[970px]sm:h-screen">
 			<!-- side nav -->
 			<div class="max-w-full bg-gray-300 text-white h-auto sm:flex flex-col items-center py-4 space-y-6 hidden">
 				<img
@@ -24,7 +24,7 @@
 					alt="Charts App Logo"
 					class="mx-6 w-16 h-auto border-b-2 py-4 space-y-6"
 				/>
-				<nav class="flex-1 w-full p-4">
+				<nav class="flex-1 w-full h-screen p-4">
 					<ul class="flex flex-col items-center">
 						<li class="mb-4">
 							<a
@@ -67,7 +67,7 @@
 				<img src="./assets/SVG/v2-logo-square.svg" alt="Charts App Logo" class="w-10 h-auto" />
 
 				<!-- Hamburger Button -->
-				<button id="sidebarToggle" class="text-gray-800 focus:outline-none">
+				<button id="sidebarToggle" class="text-blue-600 focus:outline-none">
 					<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
 					</svg>
@@ -100,9 +100,9 @@
 						</div>
 						<div class="">
 							<radar-chart
-								data="[65, 59, 70, 20, 56, 55, 40, 10]"
+								data="[65, 59, 70, 20, 56, 55, 10]"
 								datasetLabel="Performance Metrics"
-								labels='["Revenue", "Net Income", "Operating Margin", "EPS", "ROE", "Debt to Equity", "Current Ratio", "Asset Turnover"]'
+								labels='["Revenue", "Net Income", "Operating Margin", "EPS", "ROE", "Debt to Equity", "Current Ratio"]'
 							></radar-chart>
 						</div>
 						<div class="">
