@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 625 641">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #69c;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #6b94b5;
+        font-family: Graphie-Regular, Graphie;
+        font-size: 132.71px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-1" x="44" y="14" width="530" height="472" rx="66.69" ry="66.69"/>
+    <rect class="cls-2" x="271.61" y="70.01" width="75.79" height="359.99" rx="37.89" ry="37.89"/>
+    <rect class="cls-2" x="153" y="109.04" width="75.79" height="281.93" rx="37.89" ry="37.89"/>
+    <rect class="cls-2" x="390.21" y="109.04" width="75.79" height="281.93" rx="37.89" ry="37.89"/>
+  </g>
+  <text class="cls-3" transform="translate(103.05 603.69)"><tspan x="0" y="0">Chartly</tspan></text>
+</svg>
