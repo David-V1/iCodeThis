@@ -39,14 +39,14 @@ class RevenueChart extends HTMLElement {
 				datasets: [
 					{
 						label: "Sales 2023",
-						backgroundColor: "rgba(255, 99, 132, 0.5)",
-						borderColor: "rgba(255, 99, 132, 1)",
+						backgroundColor: "#9966cc",
+						borderColor: "#5d3a99",
 						borderWidth: 1,
 						data: [5000, 7000, 8000, 6000, 7500, 9000, 6500]
 					},
 					{
 						label: "Sales 2022",
-						backgroundColor: "rgba(54, 162, 235, 0.5)",
+						backgroundColor: "#89c2d9",
 						borderColor: "rgba(54, 162, 235, 1)",
 						borderWidth: 1,
 						data: [4500, 6800, 7800, 5600, 7200, 8700, 6300]

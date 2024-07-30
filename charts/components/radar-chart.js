@@ -61,9 +61,9 @@ class RadarChart extends HTMLElement {
 				datasets: [
 					{
 						label: this.getDatasetLabel(),
-						backgroundColor: "rgba(255, 99, 132, 0.2)",
-						borderColor: "rgba(255, 99, 132, 1)",
-						pointBackgroundColor: "rgba(255, 99, 132, 1)",
+						backgroundColor: "#9966cc",
+						borderColor: "#5d3a99",
+						pointBackgroundColor: "#89c2d9",
 						pointBorderColor: "#fff",
 						pointHoverBackgroundColor: "#fff",
 						pointHoverBorderColor: "rgba(255, 99, 132, 1)",
